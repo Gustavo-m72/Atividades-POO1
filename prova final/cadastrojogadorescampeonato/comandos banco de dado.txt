@@ -1,0 +1,14 @@
+show databases;
+create database if not exists jogadores;
+use jogadores;
+create table atleta(
+    id int not null auto_increment,
+    time varchar(30),
+    nome varchar(30),
+    idade int,
+    numerodegols int,
+    numerocamisa int,
+    posicao varchar(30),
+    titular int,
+    primary key (id)
+);
